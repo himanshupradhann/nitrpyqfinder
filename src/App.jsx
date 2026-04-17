@@ -97,7 +97,7 @@ export default function App() {
           <a href="https://instagram.com/himanshupradhann" target="_blank" rel="noreferrer">
             <FaInstagram />
           </a>
-          <a href="https://github.com/DevloperGagan" target="_blank" rel="noreferrer">
+          <a href="https://github.com/himanshupradhann" target="_blank" rel="noreferrer">
             <FaGithub />
           </a>
           <a href="mailto:pradhangagan85@gmail.com">
