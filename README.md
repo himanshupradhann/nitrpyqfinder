@@ -1,16 +1,126 @@
-# React + Vite
+# ⚡ PYQ Finder — Better than NITRIS Portal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fast, minimal, and modern way to access NIT Rourkela Previous Year Question Papers (PYQs) — without digging through the messy NITRIS interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Why this exists
 
-## React Compiler
+Let’s be honest — the NITRIS PYQ portal is:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* ❌ Slow
+* ❌ Hard to navigate
+* ❌ Too many clicks
 
-## Expanding the ESLint configuration
+This project fixes that.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+👉 Just enter:
+
+* Subject Code
+* Year
+* Semester
+
+…and boom 💥 — your PYQ opens instantly.
+
+---
+
+## ✨ Features
+
+* ⚡ **Instant PYQ access** (no navigation hassle)
+* 🎯 **Smart URL generation** (handles Spring, Autumn, Summer logic)
+* 📱 **Mobile-friendly UI**
+* 🌌 **Neon cyberpunk design**
+* ⌨️ **Typing animation interface**
+* 🔗 **Direct PDF open in new tab**
+* 🧩 Minimal, distraction-free experience
+
+---
+
+## 🧠 How it works
+
+This app dynamically generates official NITRIS links like:
+
+```
+https://eapplication.nitrkl.ac.in/nitris/docs/Examination/QuestionPaperUpload/{YEAR}/{SEMESTER}/End Semester/{SUBJECT}.pdf
+```
+
+### Logic handled:
+
+* Spring/Autumn → `2023-24 (Spring)`
+* Summer → `2025 (Summer)`
+
+---
+
+## 🛠️ Tech Stack
+
+* ⚛️ React (Vite)
+* 🎨 Inline Styling (Neon UI)
+* 🌐 Hosted on Netlify
+* 📦 react-icons
+
+---
+
+## ⚙️ Setup & Run Locally
+
+```bash
+npm install
+npm run dev
+```
+
+---
+
+## 🚀 Deployment
+
+Deployed easily using Netlify:
+
+* Build command:
+
+  ```
+  npm run build
+  ```
+* Publish directory:
+
+  ```
+  dist
+  ```
+
+---
+
+## 📸 Demo
+
+> Coming soon (or add your screenshot here)
+
+---
+
+## 👨‍💻 Developer
+
+* 📸 Instagram: https://instagram.com/himanshupradhann
+* 💻 GitHub: https://github.com/DevloperGagan
+* 📧 Email: [pradhangagan85@gmail.com](mailto:pradhangagan85@gmail.com)
+
+---
+
+## ⚠️ Disclaimer
+
+This project does **not host any question papers**.
+It simply provides a faster way to access publicly available files from the official NITRIS system.
+
+---
+
+## ⭐ Contribute
+
+Feel free to fork, improve UI, or add features like:
+
+* Subject autocomplete
+* PDF preview
+* Search history
+* Dark/light themes
+
+---
+
+## 🔥 Final Note
+
+If you’ve ever been frustrated finding PYQs on NITRIS…
+this tool is for you.
+
+---
