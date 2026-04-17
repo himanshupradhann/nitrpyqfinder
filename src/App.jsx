@@ -21,15 +21,15 @@ export default function App() {
   }, []);
 
   const generateLink = () => {
-    if (!subject || !year) return alert("\n 
-Bhosdi ke 😄 please fill_in all required fields \n
-भोसड़ी के 😄 कृपया सभी आवश्यक फ़ील्ड भरें। \n
-ଭୋସଡି କେ 😄 ଦୟାକରି ସମସ୍ତ ଆବଶ୍ୟକ ଖେତ୍ର ପୂରଣ କରନ୍ତୁ। \n
-Bhosdi ke 😄 veuillez remplir tous les champs obligatoires \n
-Bhosdi ke 😄 por favor, completa todos los campos obligatorios \n
-Bhosdi ke 😄 请填写所有必填字段 \n
-போஸ்டி கே 😄 தயவுசெய்து அனைத்து தேவையான புலங்களையும் நிரப்பவும்\n
-ഭോസ്ഡി കെ 😄 ദയവായി എല്ലാ ആവശ്യമായ ഫീൽഡുകളും പൂരിപ്പിക്കുക \n");
+    if (!subject || !year) return alert("
+Bhosdi ke 😄 please fill_in all required fields ,
+भोसड़ी के 😄 कृपया सभी आवश्यक फ़ील्ड भरें। ,
+ଭୋସଡି କେ 😄 ଦୟାକରି ସମସ୍ତ ଆବଶ୍ୟକ ଖେତ୍ର ପୂରଣ କରନ୍ତୁ। ,
+Bhosdi ke 😄 veuillez remplir tous les champs obligatoires ,
+Bhosdi ke 😄 por favor, completa todos los campos obligatorios ,
+Bhosdi ke 😄 请填写所有必填字段 ,
+போஸ்டி கே 😄 தயவுசெய்து அனைத்து தேவையான புலங்களையும் நிரப்பவும்  ,
+ഭോസ്ഡി കെ 😄 ദയവായി എല്ലാ ആവശ്യമായ ഫീൽഡുകളും പൂരിപ്പിക്കുക ");
 
     let yearPart = "";
 
