@@ -39,7 +39,7 @@ This project fixes that.
 
 ## Live Webpage
 ```
-https://https://nitrpyqs.netlify.app/
+https://nitrpyqs.netlify.app
 ```
 
 ## 🧠 How it works
