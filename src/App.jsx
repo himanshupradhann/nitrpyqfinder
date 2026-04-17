@@ -22,9 +22,7 @@ export default function App() {
 
   const generateLink = () => {
     if (!subject || !year) return alert("
-Bhosdi ke fill_in all required fields ,
-भोसड़ी के कृपया सभी आवश्यक फ़ील्ड भरें। ,
-ଭୋସଡି କେ ଦୟାକରି ସମସ୍ତ ଆବଶ୍ୟକ ଖେତ୍ର ପୂରଣ କରନ୍ତୁ।
+Bhosdi ke,भोसड़ी ,ଭୋସଡି କେ 
 ");
 
     let yearPart = "";
