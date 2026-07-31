@@ -95,7 +95,7 @@ Deployed easily using Netlify:
 ## 👨‍💻 Developer
 
 * 📸 Instagram: https://instagram.com/himanshupradhann
-* 💻 GitHub: https://github.com/DevloperGagan
+* 💻 GitHub: https://github.com/himanshupradhann
 * 📧 Email: [pradhangagan85@gmail.com](mailto:pradhangagan85@gmail.com)
 
 ---
