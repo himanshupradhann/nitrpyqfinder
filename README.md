@@ -38,9 +38,8 @@ This project fixes that.
 ---
 
 ## Live Webpage
-```
-https://nitrpyqs.netlify.app
-```
+
+*🌐 https://nitrpyqs.netlify.app
 
 ## 🧠 How it works
 
