@@ -1,6 +1,8 @@
 export const subjects = [
   { code: "BM3116", name: "Medical Imaging and Image Processing" },
   { code: "BM3220", name: "Artificial Organs" },
+  { code: "CS2011", name: "Introduction To AI and ML" },
+  { code: "CS2001", name: "Digital System and Design" },
   { code: "BM3244", name: "Translational Technologies for Medical Industry" },
   { code: "BM3324", name: "Enzymology and Protein Engineering" },
   { code: "BM6644", name: "Animal Biotechnology" },
