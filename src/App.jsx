@@ -2,7 +2,7 @@ import Form from "./components/form";
 import { styles } from "./components/styles";
 import Footer from "./components/footer";
 import Typingeffect from "./components/typingeffect";
-
+import Visitor from "./components/visitorcounter";
 
 export default function App() {
   return (
@@ -14,14 +14,18 @@ export default function App() {
       </style>
 
       <div style={styles.card}>
-        {/*typing effect was there */}
+      
         <Typingeffect />
 
         <Form />
-        {/* forms was */}
+    
         <br />
 
         <Footer />
+
+        <br />
+
+        <Visitor />
 
       </div>
     </div>
