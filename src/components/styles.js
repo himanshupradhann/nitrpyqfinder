@@ -46,6 +46,16 @@ export const styles = {
     fontSize: "14px",
   },
 
+    input1: {
+    width: "93%",
+    padding: "12px",
+    borderRadius: "10px",
+    border: "1px solid #00f0ff55",
+    background: "#111",
+    color: "#fff",
+    fontSize: "14px",
+  },
+
   dropdown: {
     marginTop: "5px",
     background: "#0f0f15",
