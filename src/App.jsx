@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { FaInstagram, FaGithub, FaEnvelope } from "react-icons/fa";
-import { subjects } from "./data";
+import { subjects } from "./data/subjects";
+import generateLink  from "./utilities/generateUrl";
+import { styles } from "./components/styles";
+
 
 export default function App() {
   const [subject, setSubject] = useState("");
@@ -14,6 +17,10 @@ export default function App() {
   const [displayText, setDisplayText] = useState("");
   const text = "NITR PYQS FETCHER";
 
+  const handleGenerate = () => {
+    const url = generateLink(subject, year, semester , examType);
+    window.open(url, "_blank");
+};
   // typing effect
   useEffect(() => {
     let i = 0;
@@ -31,25 +38,6 @@ export default function App() {
     window.addEventListener("click", handleClickOutside);
     return () => window.removeEventListener("click", handleClickOutside);
   }, []);
-
-  const generateLink = () => {
-    if (!subject || !year) return alert("Bhosdi ke, भोसड़ी , ଭୋସଡି କେ , 请填写所有必填字段。, போஸ்டி கே , ഭോസ്ഡി കെ");
-
-    let yearPart = "";
-
-    if (semester === "Summer") {
-      yearPart = `${year} (${semester})`;
-    } else {
-      const nextYear = parseInt(year) + 1;
-      yearPart = `${year}-${nextYear.toString().slice(-2)} (${semester})`;
-    }
-
-    const url = `https://eapplication.nitrkl.ac.in/nitris/docs/Examination/QuestionPaperUpload/${encodeURIComponent(
-      yearPart
-    )}/${examType}%20Semester/${subject.toUpperCase()}.pdf`;
-
-    window.open(url, "_blank");
-  };
 
   return (
     <div style={styles.page}>
@@ -150,7 +138,7 @@ export default function App() {
             <option>Mid</option>
           </select>
 
-          <button onClick={generateLink} style={styles.button}>
+          <button onClick={handleGenerate} style={styles.button}>
             OPEN PAPER
           </button>
         </div>
@@ -180,105 +168,3 @@ export default function App() {
     </div>
   );
 }
-
-const styles = {
-  page: {
-    minHeight: "100vh",
-    background: "#0a0a0f",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    padding: "15px",
-    fontFamily: "sans-serif",
-  },
-
-  card: {
-    width: "100%",
-    maxWidth: "380px",
-    background: "#111",
-    padding: "20px",
-    borderRadius: "18px",
-    boxShadow: "0 0 20px #00f0ff33",
-    border: "1px solid #00f0ff22",
-  },
-
-  title: {
-    color: "#00f0ff",
-    textAlign: "center",
-    marginBottom: "15px",
-    fontSize: "20px",
-  },
-
-  cursor: {
-    animation: "blink 1s infinite",
-  },
-
-  form: {
-    display: "flex",
-    flexDirection: "column",
-    gap: "10px",
-  },
-
-  input: {
-    width: "100%",
-    padding: "12px",
-    borderRadius: "10px",
-    border: "1px solid #00f0ff55",
-    background: "#111",
-    color: "#fff",
-    fontSize: "14px",
-  },
-
-  dropdown: {
-    marginTop: "5px",
-    background: "#0f0f15",
-    border: "1px solid #00f0ff33",
-    borderRadius: "10px",
-    maxHeight: "180px",
-    overflowY: "auto",
-    boxShadow: "0 0 12px #00f0ff22",
-  },
-
-  dropdownItem: {
-    padding: "10px",
-    cursor: "pointer",
-    borderBottom: "1px solid #00f0ff11",
-    transition: "0.2s",
-  },
-
-  code: {
-    color: "#00f0ff",
-    fontWeight: "600",
-  },
-
-  name: {
-    fontSize: "12px",
-    color: "#aaa",
-  },
-
-  noResult: {
-    padding: "10px",
-    color: "#888",
-    textAlign: "center",
-  },
-
-  button: {
-    marginTop: "5px",
-    padding: "14px",
-    borderRadius: "12px",
-    border: "none",
-    background: "#00f0ff",
-    color: "#000",
-    fontWeight: "700",
-    fontSize: "15px",
-    cursor: "pointer",
-  },
-
-  footer: {
-    marginTop: "15px",
-    display: "flex",
-    justifyContent: "center",
-    gap: "25px",
-    fontSize: "22px",
-  },
-};
